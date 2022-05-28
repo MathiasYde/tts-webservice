@@ -1,0 +1,4 @@
+fastapi
+pyttsx3
+uvicorn[standard]
+uuid
