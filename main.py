@@ -18,7 +18,7 @@ def read_status():
 	return {"status": "ok"}
 
 @app.get("/tts")
-async def synthesize_tts(voice: str, text: str):
+async def synthesize_tts(text: str):
 	filename = f"{uuid.uuid1()}.wav"
 	filepath = os.path.join(cache_directory, filename)
 
